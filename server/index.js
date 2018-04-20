@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const bc = require(__dirname + '/controllers/books_controller.js');
+const bc = require('./controllers/books_controller.js');
 
 const app = express();
     app.use( bodyParser.json() );
@@ -14,6 +14,6 @@ const baseURL = "/api/books";
 
 
 const port = 3000;
-    app.listen( port, () => { console.log(`Server listening on port ${port}`); } );
+    app.listen( port, () => { console.log(`Server listening on port ${port}, that's excellent`); } );
 
 
